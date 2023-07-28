@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Vtop</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: white;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: rgb(193,193,193);
+            color: black;
+        }
+
+        
+        .green
+        {background-color: rgb(204,255,51);}
+
+        .gray{
+            background-color: rgb(226,226,226);
+        }
+
+        .right{
+            
+            
+            padding:10px;
+            padding-top: 0px;
+            border:1px solid;
+            border-color:rgb(229,229,229);
+            border-top: 2px rgb(60,141,188) solid;
+            font-family: Arial;
+            background-color: white;
+            float:right;
+            width:72%;
+            overflow: auto;
+            overflow-x: auto;
+        }
+
+        
+
+
+    </style>
+</head>
+<body style="background-color:rgb(229 229 229); font-family: Arial;">
+    
+    <div class="right">
+
+    <h2>Time Table</h2>
+    <form>
+        Semester
+        <select name "Semester">
+            <option value="FS 22-23">Fall Semester 2022-23</option>
+            <option value="WS 21-22">Winter Semester 2021-22</option>
+            <option value="FS 21-22">Fall Semester 2021-22</option>
+            <option value="WS 20-21">Winter Semester 2020-21</option>
+            <option value="FS 20-21">Fall Semester 2020-21</option>
+        </select>
+    </form>
+
+    <br><br>
+
+    <table border="2" style="width:100%; border-color:rgb(178,178,178);border-collapse:collapse; text-align:center;">
+        <tr style="background-color: rgb(60,141,188); color: white;">
+            <th>Sl.No</th>
+            <th>Class Group</th>
+            <th>Course</th>
+            <th>LTPJC</th>
+            <th>Category</th>
+            <th>Course Option</th>
+            <th>Class Nbr</th>
+            <th>Slot-Venue</th>
+            <th>Faculty Details</th>
+            <th>Registered/Updated Date & Time</th>
+            <th>Attendance Date-Type</th>
+            <th>Status & Ref No</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>General(Semester)</td>
+                <td>BIT1026-Food,Nutrition and Health <b>(Theory Only)</b></td>
+                <td>3 0 0 0 3.0</td>
+                <td>University Elective</td>
+                <td>Regular</td>
+                <td>VL2022230102794</td>
+                <td>A2+TA2- SMV217</td>
+                <td>SURESH P.K- SBST</td>
+                <td>22-Jul-2022 22:59</td>
+                <td>23-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            
+            <tr>
+                <td>2</td>
+                <td>General(Semester)</td>
+                <td>CSE3001-Software Engineering <b>(Embedded Theory)</b></td>
+                <td>2 0 0 0 2.0</td>
+                <td>Program Core</td>
+                <td>Regular</td>
+                <td>VL2022230103416</td>
+                <td>B1- SJT402</td>
+                <td>SIVAPRAKASH S- SCOPE</td>
+                <td>20-Jul-2022 14:55</td>
+                <td>21-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>General(Semester)</td>
+                <td>CSE3001-Software Engineering <b>(Embedded Lab)</b></td>
+                <td>0 0 2 0 1.0</td>
+                <td>Program Core</td>
+                <td>Regular</td>
+                <td>VL2022230103747</td>
+                <td>L3+L4- SJT417</td>
+                <td>SIVAPRAKASH S- SCOPE</td>
+                <td>20-Jul-2022 14:55</td>
+                <td>21-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>General(Semester)</td>
+                <td>CSE3001-Software Engineering <b>(Embedded Project)</b></td>
+                <td>0 0 0 4 1.0</td>
+                <td>Program Core</td>
+                <td>Regular</td>
+                <td>VL2022230103748</td>
+                <td>L3+L4- NIL</td>
+                <td>SIVAPRAKASH S- SCOPE</td>
+                <td>20-Jul-2022 14:55</td>
+                <td>21-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>General(Semester)</td>
+                <td>CSE3002- Internet and Web Programming <b>(Embedded Theory)</b></td>
+                <td>2 0 0 0 2.0</td>
+                <td>Program Core</td>
+                <td>Regular</td>
+                <td>VL2022230103900</td>
+                <td>B2- SJT505</td>
+                <td>JAYAKUMAR S- SCOPE</td>
+                <td>9-Jul-2022 15:13</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>General(Semester)</td>
+                <td>CSE3002- Internet and Web Programming <b>(Embedded Lab)</b></td>
+                <td>0 0 2 0 1.0</td>
+                <td>Program Core</td>
+                <td>Regular</td>
+                <td>VL2022230103978</td>
+                <td>L15+L16- SJT419</td>
+                <td>JAYAKUMAR S- SCOPE</td>
+                <td>9-Jul-2022 15:13</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>General(Semester)</td>
+                <td>CSE3002- Internet and Web Programming <b>(Embedded Project)</b></td>
+                <td>0 0 0 4 1.0</td>
+                <td>Program Core</td>
+                <td>Regular</td>
+                <td>VL2022230103979</td>
+                <td>L15+L16- NIL</td>
+                <td>JAYAKUMAR S- SCOPE</td>
+                <td>9-Jul-2022 15:13</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>General(Semester)</td>
+                <td>CSE3013- Artificial Intelligence <b>(Embedded Theory)</b></td>
+                <td>3 0 0 0 3.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103524</td>
+                <td>E2+TE2- SJT617</td>
+                <td>TUSAR KANTI MISHRA- SCOPE</td>
+                <td>9-Jul-2022 15:12</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>General(Semester)</td>
+                <td>CSE3013- Artificial Intelligence <b>(Embedded Project)</b></td>
+                <td>0 0 0 4 1.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103525</td>
+                <td>E2+TE2- NIL</td>
+                <td>TUSAR KANTI MISHRA- SCOPE</td>
+                <td>9-Jul-2022 15:12</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>General(Semester)</td>
+                <td>CSE3035- Principles of Cloud Computing <b>(Embedded Theory)</b></td>
+                <td>3 0 0 0 3.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103255</td>
+                <td>A1+TA1- SJT407</td>
+                <td>PEREPI RAJARAJESWARI- SCOPE</td>
+                <td>9-Jul-2022 15:12</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>General(Semester)</td>
+                <td>CSE3035- Principles of Cloud Computing <b>(Embedded Lab)</b></td>
+                <td>0 0 2 0 1.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103463</td>
+                <td>L29+L30- SJT416</td>
+                <td>PEREPI RAJARAJESWARI- SCOPE</td>
+                <td>9-Jul-2022 15:12</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td>General(Semester)</td>
+                <td>CSE3501- information Security Analysis and Audit <b>(Embedded Theory)</b></td>
+                <td>2 0 0 0 2.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103426</td>
+                <td>F2- SJT707</td>
+                <td>RAMANI S- SCOPE</td>
+                <td>9-Jul-2022 15:11</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>General(Semester)</td>
+                <td>CSE3501- information Security Analysis and Audit <b>(Embedded Lab)</b></td>
+                <td>0 0 2 0 1.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103822</td>
+                <td>L25+26- SJT418</td>
+                <td>RAMANI S- SCOPE</td>
+                <td>9-Jul-2022 15:11</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>14</td>
+                <td>General(Semester)</td>
+                <td>CSE3501- information Security Analysis and Audit <b>(Embedded Project)</b></td>
+                <td>0 0 0 4 1.0</td>
+                <td>Program Elective</td>
+                <td>Regular</td>
+                <td>VL2022230103823</td>
+                <td>L25+26- NIL</td>
+                <td>RAMANI S- SCOPE</td>
+                <td>9-Jul-2022 15:11</td>
+                <td>10-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>15</td>
+                <td>General(Semester)</td>
+                <td>ESP1001- ESPANOL FUNDAMENTAL <b>(Theory Only)</b></td>
+                <td>2 0 0 0 2.0</td>
+                <td>University Core (LANGUAGE Basket)</td>
+                <td>Regular</td>
+                <td>VL2022230104488</td>
+                <td>G2- SJT308</td>
+                <td>GAURAV SUSHANT- SSL</td>
+                <td>22-Jul-2022 18:38</td>
+                <td>23-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td>General(Semester)</td>
+                <td>STS3201- Programming Skills for Employment <b>(Soft Skill)</b></td>
+                <td>3 0 0 0 3.0</td>
+                <td>University Core (GENERAL Basket)</td>
+                <td>Regular</td>
+                <td>VL2022230100101</td>
+                <td>D2+TD2- SJT415</td>
+                <td>FACE(APT)- SSL</td>
+                <td>20-Jul-2022 10:15</td>
+                <td>21-Jul-2022- Manual</td>
+                <td style="color:rgb(101 178 101);">Registered and Approved</td>
+            </tr>
+            <tr align="center" style="background-color: rgb(60,141,188); color: white;"><td colspan="12">Total Number of Credits: <b>26.0</b></td></tr>
+    </table>
+    <br><br>
+    <table border="2" style="width:100%; border-collapse: collapse; border-color: rgb(60,141,188);text-align:center;">
+        <tr style="background-color: rgb(204,204,255);">
+            <td rowspan="2" class="gray">Theory</td>
+            <td class="gray">Start</td>
+            <td>8:00</td> <td>9:00</td> <td>10:00</td> 
+            <td>11:00</td> <td>12:00</td> <td>-</td>
+            <td>Lunch</td> <td>14:00</td> <td>15:00</td> <td>16:00</td> <td>17:00</td>
+            <td>18:00</td> <td>18:51</td> <td>19:01</td>
+        </tr>
+
+        <tr style="background-color: rgb(204,204,255);">
+            <td class="gray">End</td>
+            <td>8:50</td> <td>9:50</td> <td>10:50</td> 
+            <td>11:50</td> <td>12:50</td> <td>-</td>
+            <td>Lunch</td> <td>14:50</td> <td>15:50</td> <td>16:50</td> <td>17:50</td>
+            <td>18:50</td> <td>19:00</td> <td>19:50</td>
+        </tr>
+
+        <tr style="background-color: rgb(153,204,255);">
+            <td rowspan="2" class="gray">Lab</td>
+                <td class="gray">Start</td>
+                <td>8:00</td> <td>8:51</td> <td>9:51</td> 
+                <td>10:41</td> <td>11:50</td> <td>12:31</td>
+                <td>Lunch</td> <td>14:00</td> <td>14:51</td> <td>15:51</td> <td>16:41</td>
+                <td>17:40</td> <td>18:31</td> <td>-</td>
+            </tr>
+    
+            <tr style="background-color: rgb(153,204,255);">
+                <td class="gray">End</td>
+                <td>8:50</td> <td>9:40</td> <td>10:40</td> 
+                <td>11:30</td> <td>12:30</td> <td>13:20</td>
+                <td>Lunch</td> <td>14:50</td> <td>15:40</td> <td>16:40</td>
+                <td>17:30</td> <td>18:30</td> <td>19:20</td> <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td rowspan="2" class="gray">MON</td>
+                <td class="gray">THEORY</td>
+                <td class="green">A1-CSE3035-ETH-SJT407-ALL</td> <td>F1</td> <td>D1</td> 
+                <td>TB1</td> <td>TG1</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td class="green">A2-BIT1026-TH-SMV217-ALL</td> <td class="green">F2-CSE3501-ETH-SJT707-ALL</td> <td class="green">D2-STS3201-SS-SJT415-ALL</td> 
+                <td>TB2</td> <td>TG2</td> <td>-</td>
+                <td>V3</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td>L1</td> <td>L2</td> <td class="green">L3-CSE3001-ELA-SJT417-ALL</td> 
+                <td class="green">L4-CSE3001-ELA-SJT417-ALL</td> <td>L5</td> <td>L6</td>
+                <td class="gray">Lunch</td> 
+                <td>L31</td> <td>L32</td> <td>L33</td> 
+                <td>L34</td> <td>L35</td> <td>L36</td>
+                <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td rowspan="2" class="gray">TUE</td>
+                <td class="gray">THEORY</td>
+                <td class="green">B1-CSE3001-ETH-SJT402-ALL</td> <td>G1</td> <td>E1</td> 
+                <td>TC1</td> <td>TAA1</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td class="green">B2-CSE3002-ETH-SJT505-ALL</td> <td class="green">G2-ESP1001-TH-SJT308-ALL</td> <td class="green">E2-CSE3013-ETH-SJT617-ALL</td> 
+                <td>TC2</td> <td>TAA2</td> <td>-</td>
+                <td>V4</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td>L7</td> <td>L8</td> <td>L9</td> 
+                <td>L10</td> <td>L11</td> <td>L12</td>
+                <td class="gray">Lunch</td> 
+                <td>L37</td> <td>L38</td> <td>L39</td> 
+                <td>L40</td> <td>L41</td> <td>L42</td>
+                <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td  class="gray"rowspan="2">WED</td>
+                <td class="gray">THEORY</td>
+                <td>C1</td> <td class="green">A1-CSE3035-ETH-SJT407-ALL</td> <td>F1</td> 
+                <td>V1</td> <td>V2</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td>C2</td> <td class="green">A2-BIT1026-TH-SMV217-ALL</td> <td class="green">F2-CSE3501-ETH-SJT707-ALL</td> 
+                <td class="green">TD2-STS3201-SS-SJT415-ALL</td> <td>TBB2</td> <td>-</td>
+                <td>V5</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td>L13</td> <td>L14</td> <td class="green">L15-CSE3002-ELA-SJT419-ALL</td> 
+                <td class="green">L16-CSE3002-ELA-SJT419-ALL</td> <td>L17</td> <td>L18</td>
+                <td class="gray">Lunch</td> 
+                <td>L43</td> <td>L44</td> <td>L45</td> 
+                <td>L46</td> <td>L47</td> <td>L48</td>
+                <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td  class="gray"rowspan="2">THU</td>
+                <td class="gray">THEORY</td>
+                <td>D1</td> <td class="green">B1-CSE3001-ETH-SJT402-ALL</td> <td>G1</td> 
+                <td>TE1</td> <td>TCC1</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td class="green">D2-STS3201-SS-SJT415-ALL</td> <td class="green">B2-CSE3002-ETH-SJT505-ALL</td> <td class="green">G2-ESP1001-TH-SJT308-ALL</td> 
+                <td class="green">TE2-CSE3013-ETH-SJT617-ALL</td> <td>TCC2</td> <td>-</td>
+                <td>V6</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td>L19</td> <td>L20</td> <td>L21</td> 
+                <td>L22</td> <td>L23</td> <td>L24</td>
+                <td class="gray">Lunch</td> 
+                <td>L49</td> <td>L50</td> <td>L51</td> 
+                <td>L52</td> <td>L53</td> <td>L54</td>
+                <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td  class="gray" rowspan="2">FRI</td>
+                <td class="gray">THEORY</td>
+                <td>E1</td> <td>C1</td> <td class="green">TA1-CSE3035-ETH-SJT407-ALL	</td> 
+                <td>TF1</td> <td>TD1</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td class="green">E2-CSE3013-ETH-SJT617-ALL</td> <td>C2</td> <td class="green">TA2-BIT1026-TH-SMV217-ALL</td> 
+                <td>TF2</td> <td>TDD2</td> <td>-</td>
+                <td>V7</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td class="green">L25-CSE3501-ELA-SJT418-ALL</td> <td class="green">L26-CSE3501-ELA-SJT418-ALL</td> <td>L27</td> 
+                <td>L28</td> <td class="green">L29-CSE3035-ELA-SJT416-ALL</td> <td class="green">L30-CSE3035-ELA-SJT416-ALL</td>
+                <td class="gray">Lunch</td> 
+                <td>L55</td> <td>L56</td> <td>L57</td> 
+                <td>L58</td> <td>L59</td> <td>L60</td>
+                <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td class="gray" rowspan="2">SAT</td>
+                <td class="gray">THEORY</td>
+                <td>V8</td> <td>X11</td> <td>X12</td> 
+                <td>Y11</td> <td>Y12</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td>X21</td> <td>Z21</td> <td>Y21</td> 
+                <td>W21</td> <td>W22</td> <td>-</td>
+                <td>V9</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td>L71</td> <td>L72</td> <td>L73</td> 
+                <td>L74</td> <td>L75</td> <td>L76</td>
+                <td class="gray">Lunch</td> 
+                <td>L77</td> <td>L78</td> <td>L79</td> 
+                <td>L80</td> <td>L81</td> <td>L82</td>
+                <td>-</td>
+            </tr>
+
+            <tr style="background-color: rgb(255,255,204)">
+                <td class="gray" rowspan="2">SUN</td>
+                <td class="gray">THEORY</td>
+                <td>V10</td> <td>Y11</td> <td>Y12</td> 
+                <td>X11</td> <td>X12</td> <td>-</td>
+                <td class="gray">Lunch</td> 
+                <td>Y21</td> <td>Z21</td> <td>X21</td> 
+                <td>W21</td> <td>W22</td> <td>-</td>
+                <td>V11</td>
+            </tr>
+        
+            <tr style="background-color: rgb(249,239,164)">
+                <td class="gray">LAB</td>
+                <td>L83</td> <td>L84</td> <td>L85</td> 
+                <td>L86</td> <td>L87</td> <td>L88</td>
+                <td class="gray">Lunch</td> 
+                <td>L89</td> <td>L90</td> <td>L91</td> 
+                <td>L92</td> <td>L93</td> <td>L94</td>
+                <td>-</td>
+            </tr>
+
+    </table>
+</div>
+</div>
+<div style="float:left; width:20%;">
+    <ul>
+    <li style="background-color:rgb(42,111,185); height:30px; color:white; text-align:center; padding:10px;">VTOP Menu</li>
+    <li><a href="profile.html" target="rightframe" >Profile</a></li>
+    <li><a href="proctor.html" target="rightframe">Proctor Details</a></li>
+    <li><a href="timetable.html" target="rightframe">Timetable</a></li>
+    <li><a href="gradehistory.html" target="rightframe">Grade History</a></li>
+    <li><a href="change_password.html" target="rightframe">Change Password</a></li>
+</ul>
+  </div>
+</body>
+</html>
